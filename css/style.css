@@ -1,0 +1,437 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #fefefe;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: lightblue;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    z-index: 100;
+}
+
+.nav-bar {
+    display: flex;
+    align-content: center;
+}
+
+#menu-icon {
+    font-size: 2.2rem;
+    color: black;
+    display: none;
+}
+
+.header.sticky {
+    background-color: white;
+    box-shadow: 0 .1rem 1rem black;
+}
+
+.nav-list {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    align-items: center;
+}
+
+#logo h1 {
+    color: black;
+    padding: 0.5rem 2rem;
+}
+
+.nav-list a {
+    position: relative;
+    color: black;
+    font-size: larger;
+    font-weight: bold;
+}
+
+.nav-list li:last-child {
+    margin-right: 30px;
+}
+
+.nav-list a.active {
+    border-bottom: 2px solid black;
+    /* content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: black; */
+}
+
+
+/* promo section */
+
+section {
+    min-height: 100vh;
+    padding: 1rem 7% 2rem;
+}
+
+.promo-banner {
+    display: flex;
+    align-items: center;
+}
+
+.promo-content {
+    max-width: 23rem;
+    position: relative;
+    z-index: 50;
+}
+
+.promo-content h3 {
+    font-size: 1.7rem;
+    font-weight: 700;
+    line-height: .3;
+}
+
+.promo-content h1 {
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+
+.social-media a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    height: 3rem;
+    background: transparent;
+    border: .1rem solid lightblue;
+    box-shadow: 0 0.1rem 0.2rem black;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    color: lightblue;
+    margin: .75rem .25rem 0.1rem 0;
+}
+
+.social-media a:hover {
+    color: black;
+    background-color: lightblue;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.6rem 1.6rem;
+    background-color: lightblue;
+    border-radius: 0.6rem;
+    box-shadow: 0 .2rem 0.5rem black;
+    font-size: larger;
+    color: black;
+    letter-spacing: 0.1rem;
+    font-weight: bold;
+    border: 0.2rem solid transparent;
+    transition: 0.5 ease;
+    margin: 1.7rem auto;
+}
+
+.btn:hover {
+    background-color: transparent;
+}
+
+.promo-banner .profession-container {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    background: transparent;
+    width: 700px;
+    height: 700px;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+.promo-banner .profession-container .profession-box {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 700px;
+    height: 700px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: professionRotate 13s ease infinite;
+}
+
+.profession-container .profession-box .profession {
+    position: absolute;
+    left: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    transform: rotate(calc(360deg/4*var(--i)));
+    background-color: white;
+    padding: 8px 4px;
+    transform-origin: 350px;
+}
+
+.profession-box .circle {
+    width: 550px;
+    height: 550px;
+    border: 3px solid lightblue;
+    border-radius: 50%;
+}
+
+@keyframes professionRotate {
+    0%,
+    20% {
+        transform: rotate(0deg);
+    }
+    25%,
+    45% {
+        transform: rotate(-90deg);
+    }
+    50%,
+    70% {
+        transform: rotate(-180deg);
+    }
+    75%,
+    95% {
+        transform: rotate(-270deg);
+    }
+}
+
+.promo-banner .overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-top: 350px solid lightblue;
+    border-bottom: 350px solid lightblue;
+    border-left: 350px solid transparent;
+    border-right: 350px solid lightblue;
+}
+
+span {
+    color: lightblue;
+}
+
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-img {
+    width: 70vw;
+}
+
+.heading {
+    font-size: 2.2rem;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.services .services-container {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.services-box {
+    flex: 1 1 20rem;
+    padding: 3rem 2rem 2rem;
+    border-radius: 2rem;
+    box-shadow: 0 .1rem .5rem gray;
+    text-align: center;
+    border-top: .6rem solid lightblue;
+    border-bottom: .6rem solid lightblue;
+    transition: .5s ease;
+}
+
+.services-box:hover {
+    box-shadow: 0 .1rem .2rem black;
+    transform: scale(1.02);
+}
+
+.services-box i,
+.services-box h3:hover {
+    color: lightblue;
+}
+
+.bx {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+#ai {
+    background-color: #333377;
+    background-blend-mode: multiply;
+    background-image: url("../images/AI-Image.jpg");
+    background-position: center;
+    background-size: contain;
+    color: white;
+}
+
+#back {
+    background-color: #333377;
+    background-blend-mode: multiply;
+    background-image: url("../images/backEnd.jpg");
+    background-position: center;
+    background-size: contain;
+    color: white;
+}
+
+#front {
+    background-color: #333377;
+    background-blend-mode: multiply;
+    background-image: url("../images/frontEnd.jpg");
+    background-position: center;
+    background-size: contain;
+    color: white;
+}
+
+#python {
+    background-color: #333377;
+    background-blend-mode: multiply;
+    background-image: url("../images/python.png");
+    background-position: center;
+    background-size: contain;
+    color: white;
+}
+
+.contact form {
+    max-width: 50rem;
+    margin: 1rem auto;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.contact form .input-box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 0.2rem;
+}
+
+.contact form textarea {
+    width: 100%;
+    padding: .3rem;
+    font-size: 1.2rem;
+    color: black;
+    border-radius: .2rem;
+    margin: .3rem 0;
+    box-shadow: 0 .1rem .5rem gray;
+}
+
+.input-box input {
+    width: 48%;
+    flex-grow: 1;
+    padding: .3rem;
+    font-size: 1.2rem;
+    color: black;
+    border-radius: .2rem;
+    margin: .3rem 0;
+    box-shadow: 0 .1rem .5rem gray;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem 7%;
+    background-color: lightblue;
+}
+
+.footer-iconTop a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: .8rem;
+    background-color: white;
+    border-radius: .8rem;
+    border: .2rem solid lightblue;
+    outline: .2rem solid transparent;
+    transition: .5s ease;
+}
+
+.footer-iconTop a:hover {
+    outline-color: white;
+}
+
+.footer-iconTop a i {
+    font-size: 2.2rem;
+    color: gray;
+}
+
+
+/* break points */
+
+@media (max-width:1200px) {
+    .promo-banner .profession-container .profession-box,
+    .promo-banner .profession-container .overlay {
+        right: -12rem;
+    }
+}
+
+@media (max-width:970px) {
+    .promo-banner .profession-container .profession-box,
+    .promo-banner .profession-container .overlay {
+        right: -18rem;
+    }
+}
+
+@media (max-width:830px) {
+    .promo-banner .profession-container .profession-box,
+    .promo-banner .profession-container .overlay {
+        right: -25rem;
+    }
+}
+
+@media (max-width:750px) {
+    .promo-banner .profession-container {
+        display: none;
+    }
+    .promo-content {
+        max-width: 40rem;
+        position: relative;
+        z-index: 50;
+    }
+}
+
+@media (max-width:768px) {
+    #menu-icon {
+        display: block;
+        margin-right: 20px;
+    }
+    .nav-list {
+        position: absolute;
+        display: none;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 1rem 3%;
+        background-color: white;
+        border-top: 1.rem solid rgba(0, 0, 0, .2);
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, .5);
+    }
+    .nav-list a {
+        display: block;
+        margin: 1rem 0;
+    }
+    .nav-list a.active {
+        color: lightblue;
+        border-bottom: none;
+    }
+    .nav-list.active {
+        display: block;
+    }
+}

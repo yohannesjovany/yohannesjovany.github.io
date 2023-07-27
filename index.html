@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="author" content="Yohannes Welday">
+    <meta name="description" content="templet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta property="og:title" content="portfolio">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://example.com">
+    <meta property="og:image" content="http://example.com/me.jpg">
+
+    <meta property="og:description" content="My website">
+    <meta property="og:locale" content="en-US">
+    <meta property="og:site_name" content="My website">
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Home</title>
+
+</head>
+
+<body>
+    <header class="header">
+        <div id="logo">
+            <a href="#">
+                <h1>Portfolio.</h1>
+            </a>
+        </div>
+
+        <nav class="nav-bar">
+            <ul class="nav-list">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="bx bx-menu" id="menu-icon"></div>
+
+    </header>
+    <main>
+
+        <section class="promo-banner">
+            <article class="promo-content">
+                <h3>Hello, I am</h3>
+                <h1>Yohannes Welday</h1>
+                <p>Are you looking for someone to help you make your next project a success ?<br> I am your guy for your <strong> Webdevelpment</strong>, <strong>Python-scripting</strong> and <strong>AI</strong> Projects.</p>
+                <div class="social-media">
+                    <a href="https://www.facebook.com/yohannes.welday1/"><i class="bx bxl-facebook"></i></a>
+                    <a href="https://www.upwork.com/freelancers/~01a99697a369288339"><i class="bx bxl-upwork"></i></a>
+                    <a href="https://github.com/yohannesjovany"><i class="bx bxl-github"></i></a>
+                    <a href="https://www.linkedin.com/in/yohannes-welday-2631531a3/"><i class="bx bxl-linkedin"></i></a>
+                </div>
+                <a href="#" class="btn">Download CV</a>
+            </article>
+            <article class="profession-container">
+                <div class="profession-box">
+                    <div class="profession" style="--i:0">
+                        <i class="bx bxl-python"></i>
+                        <h3>Python Script Writer</h3>
+                    </div>
+                    <div class="profession" style="--i:1">
+                        <i class="bx bx-code-alt"></i>
+                        <h3>Web Developer</h3>
+                    </div>
+                    <div class="profession" style="--i:2">
+                        <i class="bx bx-brain"></i>
+                        <h3>AI specialist</h3>
+                    </div>
+                    <div class="profession" style="--i:3">
+                        <i class="bx bx-code-alt"></i>
+                        <h3>Front-End dev</h3>
+                    </div>
+                    <div class="circle">
+
+                    </div>
+                </div>
+                <div class="overlay"></div>
+            </article>
+        </section>
+
+
+        <section class="about" id="about">
+            <div class="about-img">
+                <img src="images/" alt="">
+            </div>
+            <div class="about-content">
+                <h2 class="heading">About <span>Me</span></h2>
+                <h3>Hi, I'am Here To Help Your Next Project!</h3>
+                <p>I have Bsc degree in <em>Electrical and Computer Engineering (Computer Engineering specializtion )</em> from Addis Ababa University.<br>I also have online certifications from coursera on <strong>Machine-Learinig</strong> and <strong>Front-End development</strong>                    you can look into my portfolio or Download my CV to learn more about me</p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+        </section>
+
+        <section class="services" id="services">
+            <h2 class="heading">My <span>Services</span></h2>
+            <div class="services-container">
+                <div class="services-box" id="front">
+                    <i class="bx bx-code-alt"></i>
+                    <h3>Front-End Development</h3>
+                    <p>Front-End develpment with HTML, CSS and react is the service you will get. I will build you <strong>Responsive</strong> and <strong>interactive</strong> websites with complete <strong>API integrations</strong>.</p>
+                    <a href="#" class="btn">Read More</a>
+                </div>
+                <div class="services-box" id="back">
+                    <i class="bx bx-code-alt"></i>
+                    <h3>Back-End Development</h3>
+                    <p>Back-End development with <strong>Node.js, express.js </strong>and <strong>Mongodb</strong> is the service you will get. I will set up best <strong>ReST API</strong> for your cross platform applicatoins. </p> <a href="#" class="btn">Read More</a>
+                </div>
+                <div class="services-box" id="python">
+                    <i class="bx bxl-python"></i>
+                    <h3>Python scripting</h3>
+                    <p>Python scripts for different <strong>automation solutions</strong>.I will write you webscraping, file manuplatoin maultithreaded scripts and other automation solutions.</p>
+                    <a href="#" class="btn">Read More</a>
+                </div>
+                <div class="services-box" id="ai">
+                    <i class="bx bx-brain"></i>
+                    <h3>AI solutions</h3>
+                    <p>AI solutions will help your project in different phases. From <strong>Data preparation</strong> to <strong>Model training</strong> and <strong>Testing</strong>. </p>
+                    <a href="#" class="btn">Read More</a>
+                </div>
+            </div>
+
+        </section>
+        <section class="contact" id="contact">
+            <h2 class="heading">Contact
+                <Span>Me!</Span>
+            </h2>
+            <form action="#">
+                <div class="input-box">
+                    <input type="text" placeholder="Full Name">
+                    <input type="email" placeholder="Email Address">
+                </div>
+                <div class="input-box">
+                    <input type="number" placeholder="Mobile Number">
+                    <input type="text" placeholder="Email subject">
+                </div>
+                <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+                <input type="submit" value="Send Message" class="btn   ">
+
+            </form>
+        </section>
+
+
+
+    </main>
+    <footer class="footer">
+        <div class="footer-text">
+            <p>copyright © 2023 yohannes | All rights reserved.</p>
+        </div>
+        <div class="footer-iconTop">
+            <a href="#"><i class="bx bx-up-arrow-alt"></i></a>
+        </div>
+
+    </footer>
+
+</body>
+<script src="./js/custom.js"></script>
+
+</html>
