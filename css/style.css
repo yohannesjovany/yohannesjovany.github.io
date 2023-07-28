@@ -228,7 +228,16 @@ span {
 }
 
 .about-img {
-    width: 70vw;
+    display: inline-flex;
+    width: 70vh;
+    margin-right: 2rem;
+}
+
+.about-img img {
+    width: 100%;
+    border: 10px solid lightblue;
+    border-radius: 50%;
+    box-shadow: 0 .1rem .5rem gray;
 }
 
 .heading {
@@ -257,7 +266,9 @@ span {
 }
 
 .services-box:hover {
-    box-shadow: 0 .1rem .2rem black;
+    margin-right: 2rem;
+    margin-right: 2rem;
+    margin-right: 2rem;
     transform: scale(1.02);
 }
 
@@ -404,6 +415,9 @@ footer {
         max-width: 40rem;
         position: relative;
         z-index: 50;
+    }
+    .about {
+        flex-wrap: wrap;
     }
 }
 
